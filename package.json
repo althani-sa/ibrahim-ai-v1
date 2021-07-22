@@ -1,0 +1,21 @@
+{
+	"name": "this_got",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "TAILWIND_MODE=watch postcss ./src/style.css -o ./public/style.css -w --verbose",
+		"prod": "NODE_ENV=production postcss ./src/style.css -o ./public/style.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.3.1",
+		"postcss": "^8.3.5",
+		"tailwindcss": "^2.2.4"
+	},
+	"dependencies": {
+		"postcss-cli": "^8.3.1"
+	}
+}
