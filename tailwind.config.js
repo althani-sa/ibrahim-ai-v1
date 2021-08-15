@@ -12,7 +12,7 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			alegreya: ['Alegreya, serif'],
+			Jost: ['Jost, sans-serif'],
 		},
 		container: {
 			center: true,
