@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "TAILWIND_MODE=watch postcss ./src/style.css -o ./public/style.css -w --verbose",
-		"prod": "NODE_ENV=production postcss ./src/style.css -o ./public/style.css"
+		"prod": "postcss ./src/style.css -o ./public/style.css"
 	},
 	"keywords": [],
 	"author": "",
@@ -17,6 +17,8 @@
 		"tailwindcss": "^2.2.4"
 	},
 	"dependencies": {
+		"@fullhuman/postcss-purgecss": "^4.0.3",
+		"cssnano": "^5.0.7",
 		"postcss-cli": "^8.3.1"
 	}
 }
